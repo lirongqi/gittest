@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const numbers = [3, 6, 2, 8, 4];
+        const max = numbers.reduce((accumulator, currentValue) => {
+            // console.log(accumulator,currentValue)
+            Math.max(accumulator, currentValue)
+        }
+
+        );
+        const min = numbers.reduce((accumulator, currentValue) =>
+            Math.min(accumulator, currentValue)
+        );
+        console.log(max); // 输出 8
+        console.log(min); // 输出 2
+
+    </script>
+</body>
+
+</html>
